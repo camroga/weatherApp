@@ -1,0 +1,95 @@
+# Android & IntelliJ
+*.iml
+.idea/
+.gradle/
+local.properties
+/.cxx/
+*.apk
+*.ap_
+*.aab
+*.hprof
+
+# Kotlin/Java build outputs
+/build/
+/*/build/
+**/build/
+out/
+
+# Kotlin Symbol Processing (KSP)
+.ksp/
+
+# NDK
+obj/
+.externalNativeBuild/
+
+# Signing files
+*.jks
+*.keystore
+*.pem
+*.key
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Android Studio navigation editor
+.navigation/
+
+# Unit test reports
+test-results/
+test-output/
+
+# Log & temp files
+*.log
+*.temp
+*.tmp
+*.swp
+
+# Crashlytics / Firebase
+fabric.properties
+crashlytics-build.properties
+
+# Jetpack Compose previews
+*.cache/
+
+# Android Studio configuration
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/gradle.xml
+
+# Gradle
+build/
+gradle-app.setting
+gradle.properties
+
+# Misc
+captures/
+output.json
+*.orig
+
+# Kotlin Multiplatform
+.idea/kotlinMultiplatform.xml
+
+# VS Code
+.vscode/
+
+# Lint
+lint/intermediates/
+lint/generated/
+
+# JetBrains Rider
+.idea/.idea.Rider/
+
+# Optional cache folders
+/.cache/
+
+# Google Services
+google-services.json
+app/google-services.json
