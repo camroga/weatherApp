@@ -22,7 +22,7 @@ object NetworkModule {
         return Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create(moshi))
 //            .addConverterFactory(MoshiConverterFactory.create())
-            .baseUrl("https://api.weather.gov/points/")
+            .baseUrl("https://api.weather.gov/")
             .build()
     }
 
