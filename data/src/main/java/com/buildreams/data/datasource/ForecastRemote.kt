@@ -6,5 +6,5 @@ import retrofit2.http.Path
 
 interface ForecastRemote {
     @GET("{forecastUrl}")
-    suspend fun getPokemon(@Path("forecastUrl") forecastUrl: String): Forecast
+    suspend fun call(@Path("forecastUrl") forecastUrl: String): Forecast
 }
