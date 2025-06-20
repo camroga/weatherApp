@@ -23,3 +23,4 @@ rootProject.name = "WeatherApp"
 include(":app")
 include(":di")
 include(":data")
+include(":domain")
