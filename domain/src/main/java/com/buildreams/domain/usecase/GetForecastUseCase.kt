@@ -1,9 +1,9 @@
-package com.buildreams.pokemons.domain.usecase
+package com.buildreams.domain.usecase
 
 import com.buildreams.data.model.forecast.Forecast
-import com.buildreams.pokemons.domain.repository.ForecastRepository
-import com.buildreams.pokemons.domain.repository.LocationInfoRepository
-import jakarta.inject.Inject
+import com.buildreams.domain.repository.ForecastRepository
+import com.buildreams.domain.repository.LocationInfoRepository
+import javax.inject.Inject
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
@@ -20,6 +20,7 @@ class GetForecastUseCase @Inject constructor(
                 forecastRepository.get(url = locationInfo.properties.forecast)
             }.catch {
                 //TODO
+                println("something is wrong")
             }
     }
 }

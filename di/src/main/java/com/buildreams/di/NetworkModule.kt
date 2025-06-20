@@ -1,5 +1,7 @@
 package com.buildreams.di
 
+import com.buildreams.data.datasource.ForecastRemote
+import com.buildreams.data.datasource.LocationInfoRemote
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -26,8 +28,13 @@ object NetworkModule {
             .build()
     }
 
-//    @Provides
-//    fun provideWeatherApi(retrofit: Retrofit): WeatherRemote {
-//        return retrofit.create(WeatherRemote::class.java)
-//    }
+    @Provides
+    fun provideLocationInfoApi(retrofit: Retrofit): LocationInfoRemote {
+        return retrofit.create(LocationInfoRemote::class.java)
+    }
+
+    @Provides
+    fun provideForecastApi(retrofit: Retrofit): ForecastRemote {
+        return retrofit.create(ForecastRemote::class.java)
+    }
 }

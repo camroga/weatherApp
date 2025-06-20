@@ -40,6 +40,13 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
 
+    // Local Data Source
+    implementation(project(":data"))
+
+    // Dagger
+    implementation(libs.dagger)
+    implementation(libs.dagger.compiler)
+
     // Hilt
     implementation(libs.hilt.android.core)
     implementation(libs.androidx.hilt.navigation.compose)

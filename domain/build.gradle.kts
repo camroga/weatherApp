@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kapt)
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -42,9 +43,10 @@ dependencies {
     // Local Data Source
     implementation(project(":data"))
 
-    // Dagger
-    implementation(libs.dagger)
-    implementation(libs.dagger.compiler)
+    // Hilt
+    implementation(libs.hilt.android.core)
+    implementation(libs.androidx.hilt.navigation.compose)
+    kapt(libs.hilt.compiler)
 
     // Coroutines
     implementation(libs.kotlinx.coroutines.core)
@@ -52,11 +54,6 @@ dependencies {
 
     // Flow
     implementation(libs.androidx.lifecycle.runtime.ktx)
-
-    // Hilt
-    implementation(libs.hilt.android.core)
-    implementation(libs.androidx.hilt.navigation.compose)
-    kapt(libs.hilt.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

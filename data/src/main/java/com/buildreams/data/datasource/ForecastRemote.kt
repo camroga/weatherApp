@@ -1,10 +1,10 @@
-package com.buildreams.pokemons.data.datasource
+package com.buildreams.data.datasource
 
-import com.buildreams.data.model.forecast.Forecast
+import com.buildreams.data.model.forecast.ForecastDto
 import retrofit2.http.GET
-import retrofit2.http.Path
+import retrofit2.http.Url
 
 interface ForecastRemote {
-    @GET("{forecastUrl}")
-    suspend fun call(@Path("forecastUrl") forecastUrl: String): Forecast
+    @GET
+    suspend fun call(@Url forecastUrl: String): ForecastDto
 }

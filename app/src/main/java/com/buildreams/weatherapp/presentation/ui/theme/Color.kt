@@ -1,4 +1,4 @@
-package com.buildreams.weatherapp.ui.theme
+package com.buildreams.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
